@@ -41,14 +41,14 @@ export default function App() {
             easing="easeOutCubic"
           >
             <div className="App">
-              <Top>{ data[picked]?.name }</Top>
+              <Top color={data[picked]?.color} >{ data[picked]?.name }</Top>
               <Middle fromto={
                 {
                   from: data[picked]?.from,
                   to: data[picked]?.to
                 }
               } />
-              <Bottom data={data[picked]?.talent} />
+              <Bottom data={data[picked]?.talent} color={data[picked]?.color} />
             </div>
         </Anime>
         : ''
