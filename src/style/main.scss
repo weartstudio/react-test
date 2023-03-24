@@ -1,7 +1,13 @@
 @import 'reset';
 
+:root{
+	--primary: #00D487;
+	--primary-dark: hsl(from var(--primary) h s calc(l - 5%));
+	--primary-darken: hsl(from var(--primary) h s calc(l - 10%));
+}
+
 $c-bg: #252525;
-$c-primary: #00D487;
+$c-primary: var(--primary);
 $c-dark-primary: #004A2F;
 $c-light: #ffffff;
 $gap: 10px;
@@ -38,11 +44,10 @@ button.change{
 	position: absolute;
 	top: 0;
 	left: 0;
+	&:active,
 	&:hover{
-		background: lighten($c-dark-primary, 10%);
-	}
-	&:active{
-		background: $c-dark-primary;
+		background: $c-primary;
+		cursor: pointer;
 	}
 }
 
