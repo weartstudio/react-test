@@ -3,7 +3,7 @@
 1. I created an app with React and Vite.
 2. I added sass and started the formatting. I used figma to get colors and sizes and added the attached image to bg of the page for simpler sizing and spacing.
 3. I added data to project with json file, and import it.  Wrote a randomgenerator with similar number protection.
-4. I added animejs, and react-animejs and set it up.
+4. I added animejs & react-animejs and set it up.
 5. I added ESLint with a lint command to the project.
 
 ## The task
