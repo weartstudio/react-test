@@ -20,6 +20,8 @@ export default function App() {
     while (random == picked);
     // save the result
     setPicked(random)
+    // change color in css variable in all document
+    document.documentElement.style.setProperty('--primary', data[picked]?.color);
   }
 
   useEffect(()=>{
@@ -48,7 +50,7 @@ export default function App() {
                   to: data[picked]?.to
                 }
               } />
-              <Bottom data={data[picked]?.talent} />
+              <Bottom data={data[picked]?.talent}/>
             </div>
         </Anime>
         : ''
